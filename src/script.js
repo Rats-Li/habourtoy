@@ -296,7 +296,9 @@ if (audioContext.state === 'suspended') {
                 sound.setBuffer(buffer);
                 sound.setLoop(true);
                 sound.setVolume(0.5);
-                sound.play();
+                setTimeout(()=>{
+                    sound.play();
+                },2700)
             });
         });
     });
